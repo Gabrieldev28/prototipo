@@ -1,0 +1,92 @@
+.container{
+    margin-top: 16px;
+    background-color: #b9b8b818;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    width: 510px;
+    height: auto;
+    border-radius: 6px;
+    padding: 20px ;
+    border: 2px solid #6b6b6b;
+}
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+.user-content{
+    display: flex;
+}
+.user-photo{
+    display: flex;
+}
+.user-photo>img{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    object-fit: cover;
+
+}
+.user-info{
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.user-name{
+    font-size: 0.8rem;
+}
+.user-id{
+    font-size: 0.6rem;
+}
+.date-loc{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.6rem;
+}
+.date{
+    margin-right: 12px;
+}
+.btn-follow{
+    display: flex;
+    margin-left: 16px;
+}
+.btn-follow>button{
+    border: none;
+    background-color: transparent;
+}
+.btn-follow>button:hover{
+    text-decoration: underline;
+}
+.config{
+    display: flex;
+    flex-direction: row;
+}
+.config-button{
+    margin-left: 12px;
+}
+
+
+
+
+
+
+.buttons-footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.buttons{
+    margin-top: 12px;
+    text-align: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.buttons>i{
+    font-size: 1.4rem;
+}
+.buttons>i{
+    margin-right: 16px;
+} 

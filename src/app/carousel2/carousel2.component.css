@@ -1,0 +1,49 @@
+.carousel {
+    position: relative;
+    background-color: #b9b8b818;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .slide-container {
+    display: flex;
+    justify-content: center;
+    transition: 1s ease;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide {
+    object-fit: contain;
+  }
+  
+  .btn-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  
+  .btn-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+  
+  .carousel>button {
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+  }
+  
+  button>i:hover {
+    background-color: rgba(48, 48, 48, 0.575);
+    border-radius: 50%;
+    color: transparent;
+    color: #b9b8b8;
+    transition: 0.5s;
+  }
+  

@@ -1,0 +1,57 @@
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+.user-content{
+    display: flex;
+}
+.user-photo{
+    display: flex;
+}
+.user-photo>img{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    object-fit: cover;
+
+}
+.user-info{
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.user-name{
+    font-size: 0.8rem;
+}
+.user-id{
+    font-size: 0.6rem;
+}
+.date-loc{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.6rem;
+}
+.date{
+    margin-right: 12px;
+}
+.btn-follow{
+    display: flex;
+    margin-left: 16px;
+}
+.btn-follow>button{
+    border: none;
+    background-color: transparent;
+}
+.btn-follow>button:hover{
+    text-decoration: underline;
+}
+.config{
+    display: flex;
+    flex-direction: row;
+}
+.config-button{
+    margin-left: 12px;
+}

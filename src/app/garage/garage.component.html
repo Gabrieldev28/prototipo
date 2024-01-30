@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="header">
+        <div class="factory">
+            <h3 class="title">Honda</h3>
+            <h3 class="model">Civic</h3>
+        </div>
+        <div class="year">
+            <span>97/97</span>
+        </div>
+    </div>
+    <div class="carousel-content">
+        <div class="carousel">
+            <app-carousel2 [fotos]="meuHonda"></app-carousel2>
+        </div>
+        <div class="specs-list">
+            <div class="tamanho specs">
+                <label for="tamanho">CC:</label>
+                <span>1.6</span>
+            </div>
+            <div class="tipo specs">
+                <label for="tipo">Tipo:</label>
+                <span>4L</span>
+            </div>
+            <div class="tracao specs">
+                <label for="tracao">Tração:</label>
+                <span>FWD</span>
+            </div>
+            <div class="velocidade specs">
+                <label for="velocidade">0/100</label>
+                <span>9,8s</span>
+            </div>
+            <div class="cambio specs">
+                <label for="specs">Câmbio</label>
+                <span>M/5</span>
+            </div>
+        </div>
+    </div>
+
+    <div *ngFor="let comentario of comentarios; let i = index" class="coments{{ i + 1 }} coments">
+        <p *ngIf="!mostrarTextoCompleto[i]">{{ comentario.texto.slice(0, 140) }}...</p>
+        <p *ngIf="mostrarTextoCompleto[i]">{{ comentario.texto }}</p>
+
+        <button class="btn-vermais" (click)="toggleTextoCompleto(i)">
+            {{ mostrarTextoCompleto[i] ? 'Ver menos' : 'Ver mais' }}
+        </button>
+    </div>
+
+
+</div>

@@ -1,0 +1,19 @@
+<!-- No seu componente.html -->
+<div class="container">
+    <div class="header-info">
+      <app-user-header></app-user-header>
+    </div>
+    
+    <!-- Utilize *ngFor para iterar sobre a lista de posts -->
+    <div *ngFor="let post of posts" class="post">
+      <div class="tags-list">
+        <!-- Utilize *ngFor novamente para iterar sobre as tags de cada post -->
+        <span *ngFor="let tag of post.tags" class="tag">#{{ tag }}</span>
+      </div>
+      
+      <div class="forum-content">
+        {{ post.descricao }}
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,30 @@
+<!-- No seu componente.html -->
+<div class="container">
+    <div class="header-info">
+        <div class="user-photo">
+            <img src="../../assets/perfil/ivan.jfif" alt="">
+        </div>
+        <div class="tags-input">
+            <input type="text" id="tagInput" [(ngModel)]="tagInput"
+                placeholder="Add as tags, Ex. Fabricante, modelo...">
+            <button id="addTagButton" (click)="adicionarTag()">
+                <i class='bx bx-plus-circle'></i> <!-- Adicione um ícone de sua escolha aqui -->
+            </button>
+        </div>
+    </div>
+    <div class="tags-list-container">
+        <div class="tags-list">
+            <span *ngFor="let tag of tags" class="tag">#{{ tag }}</span>
+        </div>
+    </div>
+
+    <div class="forum-content">
+        <textarea name="forum-content-text" id="forum-content" placeholder="Descreva o problema..."></textarea>
+    </div>
+
+    <div class="btn-send">
+        <button (click)="publicar()">
+            Publicar
+        </button>
+    </div>
+</div>

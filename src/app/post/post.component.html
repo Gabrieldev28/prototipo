@@ -1,0 +1,22 @@
+<div class="container">
+    <app-user-header></app-user-header>
+    <div class="post-content">
+        <div class="carousel">
+            <app-carousel2 [fotos]="meuGol"></app-carousel2>
+        </div>
+        <div *ngFor="let comentarioItem of [comentario]; let i = index" class="coments{{ i + 1 }} coments">
+            <p *ngIf="!mostrarTextoCompleto">{{ comentarioItem.slice(0, 100) }}...</p>
+            <p *ngIf="mostrarTextoCompleto">{{ comentarioItem }}</p>
+        
+            <button class="btn-vermais" (click)="toggleTextoCompleto()">
+                {{ mostrarTextoCompleto ? 'Ver menos' : 'Ver mais' }}
+            </button>
+        </div>
+    </div>
+    <div class="buttons-footer">
+        <div class="boost buttons"><i class='bx bxs-hot'></i></div>
+        <div class="comment buttons"><i class='bx bx-comment' ></i></div>
+        <div class="share buttons"><i class='bx bx-share' ></i></div>
+    </div>
+
+</div>

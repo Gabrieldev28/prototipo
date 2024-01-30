@@ -1,0 +1,110 @@
+.container {
+    width: 510px;
+    height: auto;
+    border-radius: 6px;
+    padding: 20px;
+    background-color: rgba(95, 95, 95, 0.411);
+    backdrop-filter: blur(12px);
+    border: #6b6b6b 2px solid;
+}
+
+.user-photo>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.tags-input {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid #6b6b6b;
+    border-radius: 8px;
+    align-items: center;
+
+}
+#tagInput{
+    width: 92%;
+    height: 32px;
+    background: transparent ;
+    border: none;
+    outline: none;
+    padding: 4px;
+}
+#addTagButton{
+    width: 8%;
+    height: 32px;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tagInput::placeholder{
+    font-size: .8rem;
+    padding: 4px;
+}
+#addTagButton:hover{
+    background-color: rgba(189, 0, 0, 0.562);
+}
+.tags-list-container{
+    max-width: 100%;
+    overflow: hidden;
+}
+.tags-list{
+    margin-top: 4px;
+    margin-left: 8%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tags-list>span{
+    font-size: .8rem;
+    margin: 4px 8px;
+    padding: 4px 8px;
+    background-color: #6b6b6b;
+    border-radius: 8px;
+}
+.forum-content{
+    margin-top: 20px;
+}
+#forum-content{
+    width: 91%;
+    height: 80px;
+    margin-left: 9%;
+    resize: none;
+    font-size: .8rem;
+    font-weight: 300;
+    border: 1px solid #6b6b6b;
+    background: transparent;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+
+.btn-send{
+    display: flex;
+   justify-content: end;
+   margin-top: 8px;
+}
+.btn-send>button{
+    padding: 6px 14px;
+    background: transparent ;
+    border: 1px solid #6b6b6b;
+    border-radius: 8px;
+    transition: box-shadow 0.5s ease;
+
+}
+.btn-send>button:hover{
+    background-color:  rgba(189, 0, 0, 0.562);
+    box-shadow: 0 0 20px rgba(189, 0, 0, 0.8);
+
+}
