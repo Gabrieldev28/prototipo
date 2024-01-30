@@ -11,7 +11,7 @@ import { UserHeaderComponent } from "../user-header/user-header.component";
     imports: [CommonModule, UserHeaderComponent]
 })
 export class PostForumComponent {
-  posts: { tags: string[], descricao: string }[];
+  posts: { tags: string[]; descricao: string; }[] | undefined;
 
   constructor(private forumDataService: ForumDataService) {}
 

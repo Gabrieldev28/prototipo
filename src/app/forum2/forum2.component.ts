@@ -17,6 +17,14 @@ export class Forum2Component {
   tags: string[] = [];
   tagInput: string = '';
   descricao: string = '';
+  objForum: {
+    tags: string[],
+    descricao: string
+  } = {
+    tags: this.tags,
+    descricao: this.descricao
+  };
+  
 
   constructor(private forumDataService: ForumDataService) {}
 
@@ -37,5 +45,6 @@ export class Forum2Component {
     // Limpe as tags e descrição após publicar
     this.tags = [];
     this.descricao = '';
+    alert(this.tags);
   }
 }

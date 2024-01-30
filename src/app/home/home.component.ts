@@ -1,7 +1,7 @@
+import { ForumDataService } from './../forum-data.service';
 import { Component, OnInit } from '@angular/core';
 import { Forum2Component } from "../forum2/forum2.component";
 import { PostForumComponent } from "../post-forum/post-forum.component";
-import { ForumDataService } from '../forum-data.service';
 import { CommonEngine } from '@angular/ssr';
 import { CommonModule } from '@angular/common';
 import { PostComponent } from "../post/post.component";
@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
     constructor(private Forum:ForumDataService){}
 
     ngOnInit(): void {
-
+        this.forumPost = this.Forum.getPosts()
     }
 
 }
